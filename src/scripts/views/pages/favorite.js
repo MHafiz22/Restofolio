@@ -1,4 +1,3 @@
-import '../../component/hero-banner';
 import '../../component/restaurant-list';
 import '../../component/restaurant-item';
 import FavoriteRestaurantIdb from '../../data/favorite-restaurant-idb';

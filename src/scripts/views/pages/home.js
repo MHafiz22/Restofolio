@@ -1,4 +1,3 @@
-import '../../component/hero-banner';
 import '../../component/restaurant-list';
 import '../../component/restaurant-item';
 import RestaurantSource from '../../data/restaurant-source';
@@ -6,7 +5,19 @@ import RestaurantSource from '../../data/restaurant-source';
 const Home = {
   async render() {
     return `
-      <hero-banner></hero-banner>
+      <div class="hero">
+      <picture>
+        <source media="(max-width: 600px)" srcset="./images/hero-image-small.jpg">
+        <img src='./images/hero-image-large.jpg' alt="Hero Image"  class="hero-image">
+      </picture>
+        <div class="hero-inner">
+          <h1 class="hero-title">Temukan Lezatnya Ragam Kuliner</h1>
+          <p class="hero-tagline">
+            Sambut kelezatan makanan dari berbagai kota di katalog restoran
+            kami.
+          </p>
+        </div>
+      </div>
       <article class="restaurant">
         <div class="content">
           <h1 class="restaurant-label">Jelajahi Restoran</h1>

@@ -1,5 +1,4 @@
 import 'regenerator-runtime'; /* for async await transpile */
-import './component/nav-bar';
 import '../styles/main.css';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
@@ -22,4 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
     app.renderPage();
     swRegister();
   });
+});
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  hamburger.classList.toggle('active');
 });
